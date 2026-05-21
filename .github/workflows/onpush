@@ -1,0 +1,9 @@
+name: jobs
+on: push
+jobs:
+
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: this is job
+        run: echo "this is build job"
