@@ -1,0 +1,19 @@
+name : demo
+on : workflow_dispatch
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: print hello world
+        run: echo "hello world"
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: print hello world
+        run: echo "hello test"
+  prod:
+    runs-on: ubuntu-latest
+    steps:
+      - name: print hello world
+        run: echo "hello prod"
+          
