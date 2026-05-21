@@ -1,0 +1,16 @@
+name: jobs
+on: 
+  push:
+    branches:
+      - main
+      - dev
+      - qa
+  pull-request:
+    branches:
+      - main
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: this is job
+        run: echo "this is build job"
