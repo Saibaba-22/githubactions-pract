@@ -1,3 +1,4 @@
+---
 name : demo
 on : workflow_dispatch
 jobs:
@@ -5,6 +6,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: print hello world
-        run: | 
-          echo "hello world"
-          echo "hello sai"
+        run: echo " Hi !!! This is ${{ vars.MY_NAME}}"
