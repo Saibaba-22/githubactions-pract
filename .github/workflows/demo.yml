@@ -6,4 +6,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: print hello world
-        run: echo " Hi !!! This is ${{ vars.MY_NAME}}"
+        run: |
+          echo " Hi !!! This is ${{ vars.MY_NAME}}"
+          echo " Hi ! This is Password : ${{ secrets.MY_SECRET}}"
