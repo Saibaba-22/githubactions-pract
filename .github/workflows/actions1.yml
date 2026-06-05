@@ -1,0 +1,10 @@
+name: gitcheckout 
+on: workflow_dispatch
+jobs:
+  gitcheckout:
+    runs-on: ubuntu-latest
+    steps:
+      - name: git checkout 
+        uses: actions/checkout@v4
+      - name: print index.html
+        run: cat index.html
