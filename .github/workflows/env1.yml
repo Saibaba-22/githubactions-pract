@@ -1,0 +1,10 @@
+name: env1
+on: workflow_dispatch
+env:
+  NAME: "Sai"
+jobs:
+  envjob:
+    runs-on: ubuntu-latest
+    steps:
+     - name: print env 
+       run: echo " Welcome to $NAME"
