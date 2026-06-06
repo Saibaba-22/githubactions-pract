@@ -9,4 +9,4 @@ jobs:
       APP_NAME: "Sai12"
     steps:
      - name: print env 
-       run: echo " Welcome to $NAME "
+       run: echo " Welcome to $APP_NAME "
