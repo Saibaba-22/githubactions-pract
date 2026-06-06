@@ -1,5 +1,6 @@
 name: env1
-on: workflow_dispatch
+on:
+  workflow_dispatch
 env:
   APP_NAME: "Sai"
 jobs:
@@ -8,7 +9,7 @@ jobs:
     env:
       APP_NAME: "Sai12"
     steps:
-     - name: checking prority
-       env:
-        APP_NAME: "Sai1234"
-           run: echo " Welcome to $APP_NAME "
+      - name: checking priority
+        env:
+          APP_NAME: "Sai1234"
+        run: echo "Welcome to $APP_NAME"
