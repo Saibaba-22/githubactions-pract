@@ -8,5 +8,7 @@ jobs:
     env:
       APP_NAME: "Sai12"
     steps:
-     - name: print env 
-       run: echo " Welcome to $APP_NAME "
+     - name: checking prority
+       env:
+       APP_NAME: "Sai1234"
+          run: echo " Welcome to $APP_NAME "
