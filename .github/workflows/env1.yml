@@ -10,5 +10,5 @@ jobs:
     steps:
      - name: checking prority
        env:
-       APP_NAME: "Sai1234"
-          run: echo " Welcome to $APP_NAME "
+        APP_NAME: "Sai1234"
+           run: echo " Welcome to $APP_NAME "
