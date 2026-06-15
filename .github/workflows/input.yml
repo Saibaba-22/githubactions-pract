@@ -1,0 +1,8 @@
+name: input
+on: workflow_dispatch
+jobs:
+  inputparam:
+   runs-on: ubuntu-latest
+   steps:
+     - name: input provide 
+       run: echo " This is job executed on dev " 
