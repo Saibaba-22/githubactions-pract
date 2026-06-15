@@ -1,0 +1,13 @@
+name: terra1 deployment
+on: 
+  push:
+    branches: [ main ]
+permissions: 
+  id-token: write
+  contents: read
+jobs:
+  terraform:
+    runs-on: ubuntu-latest
+    steps:
+      - name: gitcheckout
+        uses: actions/checkout@v1
