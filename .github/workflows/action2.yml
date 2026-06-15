@@ -21,3 +21,9 @@ jobs:
           role-to-assume: arn:aws:iam::027903150537:role/OIDCterraformgit
           role-session-name: github-actions
           aws-region: ap-south-1
+      - name: terraform init 
+        run: terraform init
+      - name: terraform validate
+        run: terraform validate 
+      - name: terraform plan 
+        run: terraform plan 
