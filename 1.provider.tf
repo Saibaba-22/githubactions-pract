@@ -11,10 +11,9 @@ terraform {
 
 provider "aws" {
   region = "ap-south-1"
-  access_key = "ACCESS-KEY"
-  secret_key = "SECRET-KEY"
 }
 
+/*
 terraform {
   backend "s3" {
     bucket         = "saiterrastate"   # S3 bucket name
@@ -24,4 +23,4 @@ terraform {
     encrypt        = true
   }
 }
-
+*/
