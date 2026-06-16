@@ -10,4 +10,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: print the variable 
-        run: echo " this is the job executed on ${{inputs.environment}}
+        run: echo " this is the job executed on ${{inputs.environment}}"
