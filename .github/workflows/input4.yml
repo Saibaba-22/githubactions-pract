@@ -1,0 +1,12 @@
+name: context variable name 2
+on: workflow_dispatch
+jobs:
+  context-demo:
+    runs-on: ubuntu-latest
+    steps: 
+      - name : print context-variables 
+        run: |
+          echo " this is workflow is triggered by ${{ github.actor}}"
+          echo " this repository name is ${{ github.repository}}"
+      - name: print all context variables 
+        run: echo " ${{ toJson (github)}}
