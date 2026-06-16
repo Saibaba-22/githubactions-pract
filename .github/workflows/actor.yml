@@ -1,0 +1,10 @@
+name: github context 
+on: workflow_dispatch
+jobs:
+  context-demo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: context-demo
+        run: |
+          echo " this work flow done is triggered by ${{ github.actor}}
+          echo " this is git repo  ${{ github.repository}}
